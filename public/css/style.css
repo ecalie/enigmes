@@ -1,0 +1,32 @@
+body {
+	background: url('../../assets/img/fond3.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+
+	padding: 10px 30px 10px 30px;
+}
+
+.btn-blanc{
+	background-color: white;
+	color: white;
+}
+
+.blanc {
+	color : white;
+}
+
+
+.panel {
+	background-color: rgba(255,255,255,0.5)
+}
+
+.panel-blanc {
+	background-color: rgba(255,255,255,0);
+}
+
+.panel-blanc-800 {
+	background-color: rgba(255,255,255,0);
+	height: 800px;
+}
