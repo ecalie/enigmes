@@ -5,38 +5,52 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
 
-   <div class="container">
-     <div class="row panel panel-default">
-       <div class="col-md-10">
-         <div class="row">
-            <div class="panel-body">
-              <p> 
-                Maintenent imagines que tu sois un chauffeur de bus. Initialement, ton bus est vide ; au premier arrêt de bus, 2 personnes montent. A l'arrêt suivant 3 personnes montent et une autre descend. Tu continues ta route et t'arrête à nouveau, 1 personne monte et 2 autres personnes dsecendent du bus. Au dernier arrêt avant le terminus, 2 personnes montent.
-              </p>
-            </div>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="row">
+          <div class="col-xs-3 col-sm-2">
+            <ul class="list-group">
+              {% for p in liste %}
+                <a href="{{p.lien}}" class="list-group-item">{{p.description}}</a>
+              {% endfor %}
+            </ul>
           </div>
 
-          <div class="row">
-            <div class="col-sm-2 col-sm-offset-5">
-              <a class="btn btn-default" href="p3.html"> Clique ici pour voir la question </a>
+          <div class="col-xs-9 col-sm-10">
+            <div class="row">
+              <div class="panel-body">
+                <p> 
+                Maintenent imagines que tu sois un chauffeur de bus. Initialement, ton bus est vide ; au premier arrêt de bus, 2 personnes montent. A l'arrêt suivant 3 personnes montent et une autre descend. Tu continues ta route et t'arrête à nouveau, 1 personne monte et 2 autres personnes dsecendent du bus. Au dernier arrêt avant le terminus, 2 personnes montent.
+                </p>
+             </div>
             </div>
-           </div>
+
+            <div class="row">
+              <center>
+                <div class="col-xs-9 col-sm-10">
+                  <a class="btn btn-default" href="p3"> Clique ici pour voir la question </a>
+                </div>
+              </center>
+            </div>
+
+            <br/>
+            <div class="row">
+              <div class="col-xs-9 col-sm-10">
+                <center>
+                  <img src="img/labyrinthe_2.png">
+                </center>
+              </div>
+            </div>
+          </div>
         </div>
-       <div class="col-md-2">
-         <img src="../assets/img/labyrinthe_2.png">
-       </div>
-     </div>
-  </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
